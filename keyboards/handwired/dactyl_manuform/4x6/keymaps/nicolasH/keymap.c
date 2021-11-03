@@ -93,15 +93,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 						),
 */
   [_BASE] = LAYOUT(\
-		   KC_ESC,          KC_Q,           KC_W,           KC_F,           KC_P,           KC_B,          KC_J,           KC_L,           KC_U,         KC_Y,       KC_SCLN,   KC_DEL, /* KC_MINS */ \
-		   LCTL_T(KC_TAB),  LCTL_T(KC_A),   LALT_T(KC_R),   LSFT_T(KC_S),   LGUI_T(KC_T),   KC_G,          KC_M,   RGUI_T(KC_N),   RSFT_T(KC_E),   LALT_T(KC_I),  RCTL_T(KC_O), KC_ENT,  /* KC_QUOT,*/ \
-		   KC_LSFT,         KC_Z,           KC_X,           KC_C,           KC_D,           KC_V,          KC_K,           KC_H,        KC_COMM,       KC_DOT,       KC_SLSH,   KC_RSFT, /* KC_BSLASH,*/ \
-                                                    KC_GRV,         KC_QUOTE,                                                                KC_MINUS,         KC_BSLASH,                    \
-		   /*		                                        LT(_NAV,KC_SPC), LT(_SYM,KC_TAB),          LT(_FUN,KC_BSPC), LT(_NUM,KC_ENT), \*/
-		                                                        LT(_NUM,KC_SPC), LT(_FUN,KC_TAB),          LT(_SYM,KC_ENT), LT(_NAV,KC_BSPC), \
-                                                                                KC_LGUI,         KC_LALT,          KC_RCTRL       , KC_BTN3,           \
-                                                                                 KC_DQT,         KC_UNDS,          KC_WH_U        , KC_WH_D\
-)
+		   KC_TILDE,       KC_Q,   KC_W,   KC_F,   KC_P,   KC_B,                          KC_J,     KC_L,    KC_U,    KC_Y,    KC_SCLN,  KC_PIPE,\
+		   LCTL_T(KC_TAB), MC_A,   MA_R,   MS_S,   MG_T,   KC_G,                          KC_M,     MG_N,    MS_E,    MA_I,    MC_O,     KC_BSLASH,\
+                   KC_GRV,         KC_Z,   KC_X,   KC_C,   KC_D,   KC_V,                          KC_K,     KC_H,    KC_COMM, KC_DOT,  KC_SLSH,  KC_EQUAL,\
+		                           KC_DQT, KC_QUOT,                                                          KC_MINS, KC_UNDS,\
+		                             LT(_NUM,KC_SPC), LT(_FUN,KC_TAB),          LT(_SYM,KC_ENT), LT(_NAV,KC_BSPC), \
+                                                      KC_ESC,         KC_ESC,           KC_DEL       , KC_DEL,           \
+                                                      KC_DQT,         KC_UNDS,          KC_WH_U        , KC_WH_D\
+		   ),
 
   [_SYM] = LAYOUT(
 		_______,_______,_______,_______,_______,_______,    KC_EXLM,KC_AT  ,KC_LCBR,KC_RCBR,KC_AMPR,_______,
